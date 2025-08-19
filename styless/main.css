@@ -1,0 +1,55 @@
+main{
+  margin-top: 40px;
+
+}
+
+#featured{
+  margin-bottom: 80px;
+  img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card{
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
+
+      &:has(.txt-lg){
+        padding: 12px;
+      }
+
+      h2{ 
+        color: var(--branco);        
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.weekly{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #1E293B;
+  padding: 14px 0;
+
+}
