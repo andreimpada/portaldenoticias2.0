@@ -62,4 +62,33 @@ main{
 .contentweekly{
   display: flex;
   gap: 16px;
+  margin-bottom: 80px;
+  
+
+  & .card{
+    width: 292px;
+    height: 234px;
+
+    & figcaption{
+      position: relative;
+           
+      & img{
+        width:292px;
+        height: 160px;
+      }
+
+      & span{
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+
+      & p{
+        color: var(--branco);
+      }
+        
+      }
+      
+    }
 }
+
