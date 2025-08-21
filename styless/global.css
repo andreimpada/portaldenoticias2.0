@@ -37,6 +37,9 @@
   font: var(--textspan);
 }
 
+.txtp{
+  font: var(--textp);
+}
 a{
   all: unset;
 }
@@ -51,9 +54,7 @@ a{
   color: var(--branco);  
 }
 
-img{
-  max-width: 100%;
-}
+
 
 body{
   background-color: var(--preto);
@@ -89,4 +90,10 @@ h1,h2,h3{
   gap:4px;
   align-items: center;
   color: var(--gelo)
+}
+
+.vertudo:hover,
+.vertudo:hover path{
+    color:var(--azulclaro); 
+    fill:var(--azulclaro);
 }
