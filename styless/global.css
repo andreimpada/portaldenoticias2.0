@@ -21,6 +21,34 @@
   --textp:400 14px/160% "Archivo", sans-serif;
 
 }
+.mobile-only{
+  display: initial;
+}
+.desktop-only{
+  display: none;
+}
+
+.container{
+  max-width: 1280px;
+  padding-inline:16px;
+  margin-inline: auto;
+}
+
+@media (width>=80em){
+    .desktop-only{
+    display: initial;
+    }
+
+    .mobile-only{
+      display: none !important;
+    }
+
+    .container{
+    max-width: 1280px;
+    padding-inline:32px;
+    margin-inline: auto;
+  }
+}
 
 .txt-2xl{
   font: var(--texth1)
@@ -75,12 +103,6 @@ body{
   gap: 16px;
 }
 
-.container{
-  max-width: 1280px;
-  padding-inline:32px;
-  margin-inline: auto;
-}
-
 h1,h2,h3{
   font: inherit;
 }
@@ -96,4 +118,9 @@ h1,h2,h3{
 .vertudo:hover path{
     color:var(--azulclaro); 
     fill:var(--azulclaro);
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
 }
